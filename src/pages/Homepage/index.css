@@ -1,0 +1,134 @@
+.main-content {
+  height: 100vh;
+  width: 100%;
+}
+
+.bgvideo-container {
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+}
+
+#intereactVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  /* transform: translate(-50%, -50%); */
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.nav-bar {
+  height: 13vh;
+  width: 100%;
+  /* background-color: gray; */
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-logo {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-img {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  background-image: url("src/assets/intereact-logo.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  margin-left: 1vw;
+}
+
+.nav-links {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.links {
+  width: 50%;
+  height: 100%;
+  font-family: "Wix Madefor Display", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.main-container {
+  height: 87vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 180px;
+  font-family: "Rubik Mono One", monospace;
+  letter-spacing: -1vh;
+}
+
+.intereact-sign-container {
+  /* background: -webkit-linear-gradient(0deg, white, darkgray, darkblue); */
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: white;
+  /* -webkit-background-clip: text;
+  background-clip: text;*/
+  -webkit-text-fill-color: rgb(121, 121, 121);
+}
+
+.intereact-sign-container span {
+  display: block;
+  /* animation: reveal 1.5s cubic-bezier(0.1, 0, 0.1, 1) 0.5s; */
+  animation: colorchange 1s infinite running;
+}
+
+/* @keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  75% {
+    opacity: 0.8;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+@keyframes colorchange {
+  0% {
+    fill-opacity: 0;
+  }
+  50% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0;
+  }
+}
