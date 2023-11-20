@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./index.css";
+import { useNavigate } from "react-router-dom";
 
 function Loginpage() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   function handleChangeUsername(e) {
     setUsername(e.target.value);
@@ -15,16 +17,21 @@ function Loginpage() {
 
   function validateLogin(e) {
     if (username == "prathik" && password == "broski") {
-      console.log("success");
+      alert("Success!");
+      navigate("/");
     } else {
-      console.log("fail");
+      alert("Incorrect login credentials!");
     }
   }
 
   return (
     <>
       <div className="main-content">
-        <div className="nav-bar"></div>
+        <div className="login-nav-bar">
+          <div className="home-link">
+            <a href="/">Home</a>
+          </div>
+        </div>
         <div className="login-main-container">
           <div className="login-about">
             <p>

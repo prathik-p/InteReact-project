@@ -41,6 +41,7 @@ function Homepage() {
         <div id="about-section">
           <AboutSection />
         </div>
+        <div className="footer-section"></div>
       </div>
     </>
   );
