@@ -140,8 +140,47 @@
   height: 30vh;
   width: 100%;
   z-index: 1;
-  background-color: white;
-  border-top: 10px solid white;
+  background-color: rgb(40, 40, 40);
+  border-top: 10px solid rgb(40, 40, 40);
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contacts {
+  height: 25vh;
+  width: 40vw;
+  color: white;
+  margin-left: 70px;
+  margin-top: 10px;
+  font-family: "Comfortaa", monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-title {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.contacts a {
+  height: auto;
+  width: fit-content;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  height: 20vh;
+  width: 50vw;
+  background-image: url("src/assets/intereact-logo.png");
+  background-position-x: left;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
 }

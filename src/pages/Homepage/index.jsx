@@ -21,8 +21,8 @@ function Homepage() {
           </div>
           <div className="nav-links">
             <div className="links">
-              <div className="default-link">
-                <a>Default</a>
+              <div className="randompic-link">
+                <a href="random">Random</a>
               </div>
               <div className="about-link">
                 <a href="#about-section">About</a>
@@ -41,7 +41,16 @@ function Homepage() {
         <div id="about-section">
           <AboutSection />
         </div>
-        <div className="footer-section"></div>
+        <div className="footer-section">
+          <div className="contacts">
+            <div className="contact-title">Contacts</div>
+            <div>Phno : 23929920200</div>
+            <a>Instagram</a>
+            <a>X</a>
+            <a>Facebook</a>
+          </div>
+          <div className="footer-logo"></div>
+        </div>
       </div>
     </>
   );
