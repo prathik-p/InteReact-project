@@ -1,4 +1,4 @@
-import AboutSection from "../../components/Aboutsection";
+import AboutSection from "../../components/AboutSection";
 import "./index.css";
 
 function Homepage() {
