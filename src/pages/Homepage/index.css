@@ -46,7 +46,7 @@
   width: 50%;
   overflow: hidden;
   display: flex;
-  background-image: url("public/intereact-logo.png");
+  background-image: url("/intereact-logo.png");
   background-size: 80%;
   background-repeat: no-repeat;
   background-position-x: left;
@@ -178,7 +178,7 @@
 .footer-logo {
   height: 20vh;
   width: 50vw;
-  background-image: url("public/intereact-logo.png");
+  background-image: url("/intereact-logo.png");
   background-position-x: left;
   background-position-y: center;
   background-repeat: no-repeat;
