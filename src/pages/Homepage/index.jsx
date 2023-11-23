@@ -11,7 +11,7 @@ function Homepage() {
       <div className="main-content">
         <div className="bgvideo-container">
           <video autoPlay muted loop playsInline id="intereactVideo">
-            <source src="src/assets/inter-vid.mp4" type="video/mp4" />
+            <source src="public/inter-vid.mp4" type="video/mp4" />
           </video>
         </div>
 
