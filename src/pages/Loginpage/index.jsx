@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./index.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Loginpage() {
   const [username, setUsername] = useState("");
@@ -15,7 +15,7 @@ function Loginpage() {
     setPassword(e.target.value);
   }
 
-  function validateLogin(e) {
+  function validateLogin() {
     if (username == "prathik" && password == "prejith") {
       alert("Success!");
       navigate("/");
@@ -29,7 +29,7 @@ function Loginpage() {
       <div className="main-content">
         <div className="login-nav-bar">
           <div className="home-link">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </div>
         </div>
         <div className="login-main-container">

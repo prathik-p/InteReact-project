@@ -1,4 +1,5 @@
 import "./index.css";
+import { Link } from "react-router-dom";
 
 function RandomPic() {
   return (
@@ -6,7 +7,7 @@ function RandomPic() {
       <div className="main-content">
         <div className="random-navbar">
           <div className="random-home-link">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </div>
         </div>
         <div className="random-pic-grid">

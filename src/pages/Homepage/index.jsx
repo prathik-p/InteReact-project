@@ -1,4 +1,5 @@
 import AboutSection from "../../components/AboutSection";
+import { Link } from "react-router-dom";
 import "./index.css";
 
 function Homepage() {
@@ -22,13 +23,13 @@ function Homepage() {
           <div className="nav-links">
             <div className="links">
               <div className="randompic-link">
-                <a href="random">Random</a>
+                <Link to="random">Random</Link>
               </div>
               <div className="about-link">
                 <a href="#about-section">About</a>
               </div>
               <div className="login-link">
-                <a href="login">Login</a>
+                <Link to="login">Login</Link>
               </div>
             </div>
           </div>
